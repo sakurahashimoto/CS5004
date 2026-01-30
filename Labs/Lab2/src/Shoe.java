@@ -1,5 +1,5 @@
 /**
-This class represents a shoe. A shoe has kind, color, brand, and size
+This class represents a shoe which has a kind, color, brand, and size.
  */
 public class Shoe {
 
