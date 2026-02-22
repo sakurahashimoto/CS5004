@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/sakurahashimoto/CS5004/Labs/Lab5/src</OriginalElement>
+  <nodes>
+    <node x="-18.5" y="-14.0">InvalidAgeException</node>
+    <node x="-81.0" y="46.0">Artist</node>
+    <node x="-103.5" y="226.0">VisualArtist</node>
+    <node x="279.0" y="406.0">Actor</node>
+    <node x="322.0" y="166.0">Poet</node>
+    <node x="226.0" y="226.0">Musician</node>
+    <node x="180.0" y="346.0">Filmmaker</node>
+    <node x="-13.0" y="346.0">Photographer</node>
+    <node x="112.5" y="406.0">Dancer</node>
+    <node x="-87.5" y="406.0">Painter</node>
+    <node x="-3.0" y="166.0">MultimediaArtist</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Painter" target="VisualArtist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-35.0" y="280.0" />
+      <point x="-135.0" y="280.0" />
+      <point x="-135.0" y="200.0" />
+      <point x="-35.0" y="200.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="Dancer" target="MultimediaArtist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="165.0" y="320.0" />
+      <point x="205.0" y="320.0" />
+      <point x="205.0" y="140.0" />
+      <point x="85.0" y="140.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="Filmmaker" target="MultimediaArtist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="245.0" y="320.0" />
+      <point x="205.0" y="320.0" />
+      <point x="205.0" y="140.0" />
+      <point x="85.0" y="140.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="Musician" target="Artist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="285.0" y="120.0" />
+      <point x="-35.0" y="120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Actor" target="MultimediaArtist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="325.0" y="320.0" />
+      <point x="205.0" y="320.0" />
+      <point x="205.0" y="140.0" />
+      <point x="85.0" y="140.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="VisualArtist" target="Artist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Photographer" target="VisualArtist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="65.0" y="320.0" />
+      <point x="-35.0" y="320.0" />
+      <point x="-35.0" y="280.0" />
+      <point x="-135.0" y="280.0" />
+      <point x="-135.0" y="200.0" />
+      <point x="-35.0" y="200.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="MultimediaArtist" target="Artist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="85.0" y="120.0" />
+      <point x="-35.0" y="120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Poet" target="Artist" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="365.0" y="120.0" />
+      <point x="-35.0" y="120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.8492647058823529" showDependencies="false" x="275.7337662337661" y="225.030303030303" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
