@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//数字のリストを受け取って、「どの数字が何パーセント含まれているか」を計算する
+
 /**
  * This class calculate the occurrence rates of elements within a list.
  */
@@ -27,6 +29,7 @@ public class DataCollections {
     //結果はMap型の外から受け取った数字とそれが起こる頻度のセット
     //Mapインターフェース（ーができる）にHashMapを代入
     //ただの空の箱
+    //we create instance of hashmap
     Map<Integer, Double> frequencyMap = new HashMap<>();
     //リストに何個入ってるか数を数えて代入
     double totalSize = numbers.size();
@@ -34,6 +37,7 @@ public class DataCollections {
     //もし、外から受けとった数字がすでに”frequencyMap”に入っていたら、1カウントあげる。なかったら、
     //”n”の数字を１とセットする
     //ここでそれぞれの数字（n）をfrequencyMap　に書き込む　.put
+    //counting the number of times each element in numbers occurs
     for (Integer n : numbers) {
       //マップの中身は、数字：何回出てきたかの回数
       //ループ終了後は、数；回数
@@ -51,7 +55,6 @@ public class DataCollections {
     for (Integer key : frequencyMap.keySet()) {
       //キーは引数の数字たちだけど、そこからじゃないとバリューは取れない
       //frequencyMap.get(key)　中にkeyを入れたときは必ずバリューが帰ってくる
-      //キーそのものに対して何かやりたかったら、getは使わないでただkey*2とかやる
       double frequency = frequencyMap.get(key) / totalSize;
       frequencyMap.put(key, frequency);
     }

@@ -8,6 +8,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+//やっていること:
+//DataCollections で数字の統計を出す
+//Swimmer オブジェクトを3人分作る
+//Collections.sort() で全員を速い順に並べる（Problem 2の発動）
+//SwimmersIterator を使って、合格者だけを表示する（Problem 3の発動）
+
 public class Main {
   public static void main(String[] args) {
 
@@ -21,12 +27,15 @@ public class Main {
     System.out.println(result);
     System.out.println();
 
+    //Problem2
+    //We create multiples swimmers and compare
     // テスト用データの準備
     //the Swimmer constructor to create three individual objects
     Swimmer sakura = new Swimmer("Sakura",
-        Arrays.asList(28.0, 29.0, 30.0, 27.5, 28.5, 29.0),
-        new ArrayList<>(), new ArrayList<>(),
-        Arrays.asList(25.5, 27.0)); // 平均: 26.25
+        /*butterfly50mTimes=*/Arrays.asList(28.0, 29.0, 30.0, 27.5, 28.5, 29.0),
+        /*backstroke50mTimes=*/new ArrayList<>(),
+        /*breaststroke50mTimes=*/new ArrayList<>(),
+        /*freestyle50mTimes=*/Arrays.asList(25.5, 27.0)); // 平均: 26.25
 
     Swimmer kent = new Swimmer("Kent",
         Arrays.asList(31.0, 32.0, 33.0),
@@ -41,7 +50,7 @@ public class Main {
     List<Swimmer> allSwimmers = Arrays.asList(sakura, kent, yuki);
 
     //Problem 2: 並べ替え（Sorting）のテスト
-    System.out.println("--- Problem 2: Sorting Results (Fastest First) ---");
+    System.out.println("Problem 2: Sorting Results (Fastest First)");
 
     // ここが重要！Comparable(compareTo)を使って並べ替えます
     //To test Problem 2, I call Collections.sort and pass allSwimmers as the argument

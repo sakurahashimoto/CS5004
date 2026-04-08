@@ -4,6 +4,8 @@ import Problem2.Swimmer;
 import java.util.Iterator;
 import java.util.List;
 
+//選手の名簿を上から順にチェックして、条件に合う「合格者」だけをピックアップする役割
+
 //イテレーターという役割を引き受ける宣言
 //イテレーターはインターフェース型、つまり、役割をさすかた
 //イテレーターはhasNext()とnext()(次をください）の2つを持ってる
@@ -34,6 +36,7 @@ public class SwimmersIterator implements Iterator<Swimmer> {
   //審査員として次がいるか(true/false)を報告するメソッドを上書き（Override）するよ
   //true or false を伝える
   //it checks if nextSwimmer is already holding someone.
+  //found someone 
   public boolean hasNext() {
     if (nextSwimmer != null) {
       return true;

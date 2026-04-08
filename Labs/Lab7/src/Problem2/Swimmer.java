@@ -1,6 +1,10 @@
 package Problem2;
 
+
 import java.util.List;
+
+//選手一人の「名前」や「過去の全タイム」を大切に保管しているクラス
+
 //この Swimmer クラスでは、Comparable インターフェースを実装しました。
 // compareTo メソッドの中では、for-each ループを使って自分と相手の自由形タイムの平均値を算出し、
 // Double.compare を用いて比較しています。
